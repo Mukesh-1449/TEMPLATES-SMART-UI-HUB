@@ -79,10 +79,10 @@ The main goals of SMART UI HUB are to:
 
 | Name                            |
 | ------------------------------- |
-| **T. Harshavardhan Reddy**      |
-| **Boodati Jayanth**             |
-| **Baddigam Venkateswara Reddy** |
-| **Tulluri Navadeep**            |
+| **J. Mukesh Kumar**      |
+| **P. Nithin**             |
+| **M.N. Siddhartha Reddy** |
+| **C. Vikram Chowdary**            |
 
 ---
 
