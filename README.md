@@ -2,7 +2,7 @@
 
 **SMART UI HUB** is a modern collection of responsive and interactive user interface templates designed for web developers, students, and designers. It provides ready-to-use UI concepts for dashboards and SaaS applications.
 
-🌐 **Live Demo:** [SMART UI HUB](https://harsha2139.github.io/SMART-UI-HUB/)
+🌐 **Live Demo:** [SMART UI HUB](https://mukesh-1449.github.io/TEMPLATES-SMART-UI-HUB/)
 
 ---
 
@@ -88,7 +88,7 @@ The main goals of SMART UI HUB are to:
 
 ## 🌐 Live Website
 
-**[Visit SMART UI HUB](https://harsha2139.github.io/SMART-UI-HUB/)**
+**[Visit SMART UI HUB](https://mukesh-1449.github.io/TEMPLATES-SMART-UI-HUB/)**
 
 ---
 
