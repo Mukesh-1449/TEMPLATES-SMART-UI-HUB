@@ -717,6 +717,55 @@ const sheetCategory =
 ============================================================ */
 
 function getTemplatePath(template) {
+
+  // FIX FOR AI TEMPLATES
+  if (template.category.id === "ai") {
+
+    const aiFiles = [
+      "index.html",
+      "index (1).html",
+      "index (4).html",
+      "index (7).html",
+      "index (10).html",
+      "index (13).html",
+      "index (16).html",
+      "index (19).html",
+      "index (22).html",
+      "index (25).html",
+      "index (28).html",
+      "index (31).html",
+      "index (34).html",
+      "index (37).html",
+      "index (40).html",
+      "index (43).html"
+    ];
+
+    const aiTemplates = ALL_TEMPLATES.filter(
+      item => item.category.id === "ai"
+    );
+
+    const index = aiTemplates.findIndex(
+      item => item.id === template.id
+    );
+
+    if (index !== -1 && aiFiles[index]) {
+      return "ai/" + aiFiles[index];
+    }
+  }
+
+  // FIX FOR AIRTEL RECHARGE
+  if (template.category.id === "airtel-recharge") {
+
+    return [
+      "airtel-recharge",
+      "airtel-recharge",
+      template.collection.slug,
+      template.slug,
+      "index.html"
+    ].join("/");
+  }
+
+  // OTHER CATEGORIES
   return [
     template.category.base,
     template.collection.slug,
