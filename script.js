@@ -712,13 +712,14 @@ const sheetCategory =
   document.getElementById("sheetCategory");
 
 
+
 /* ============================================================
    ACTUAL TEMPLATE PATH
 ============================================================ */
 
-
 function getTemplatePath(template) {
 
+  // AI templates
   if (template.category.id === "ai") {
 
     const aiTemplates = ALL_TEMPLATES.filter(
@@ -730,26 +731,16 @@ function getTemplatePath(template) {
     );
 
     if (index >= 0) {
-      const number = index * 3;
 
-      const filename = number === 0
+      const filename = index === 0
         ? "index.html"
-        : `index (${number}).html`;
+        : `index (${index * 3 - 2}).html`;
 
       return `ai/${filename}`;
     }
   }
 
-  return [
-    template.category.base,
-    template.collection.slug,
-    template.slug,
-    "index.html"
-  ].join("/");
-}
-
-
-  // FIX FOR AIRTEL RECHARGE
+  // Airtel Recharge templates
   if (template.category.id === "airtel-recharge") {
 
     return [
@@ -761,7 +752,7 @@ function getTemplatePath(template) {
     ].join("/");
   }
 
-  // OTHER CATEGORIES
+  // All other categories
   return [
     template.category.base,
     template.collection.slug,
@@ -769,6 +760,7 @@ function getTemplatePath(template) {
     "index.html"
   ].join("/");
 }
+
 
 
 /* ============================================================
